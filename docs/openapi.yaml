@@ -3,10 +3,13 @@ info:
   title: Task API
   version: 1.0.0
 servers:
-  - url: http://localhost:3000
+- url: http://localhost:3000
+  description: Local development servers
+- url: https://task-api-v33h.onrender.com
+  description: Production server on render
 tags:
-  - name: Tasks
-    description: Task-related endpoints
+- name: Tasks
+  description: Task-related endpoints
 paths:
   /tasks:
     $ref: paths/tasks.yaml
